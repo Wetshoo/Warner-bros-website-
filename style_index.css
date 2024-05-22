@@ -1,0 +1,133 @@
+/* style_index.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+}
+
+/* Navigation bar styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a07f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New';
+    transition: all 0.3s ease;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+input[type="text"] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.05);
+}
+
+.banner .text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-family: 'Courier New';
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+/* Movie trailer styles */
+.trailer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.trailer .container {
+    position: relative;
+    overflow: hidden;
+}
+
+.trailer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.trailer img:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New';
+}

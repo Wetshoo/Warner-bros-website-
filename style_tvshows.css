@@ -1,0 +1,168 @@
+/* style_tvshows.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navigation bar styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a07f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New';
+    transition: all 0.3s ease;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+input[type="text"] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.05);
+}
+
+.banner .text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-family: 'Courier New';
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    font-family: 'Courier New';
+    margin-bottom: 0;
+}
+
+/* Content styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    background-color: #3a07f3;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Courier New';
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.trailer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.trailer .container {
+    position: relative;
+}
+
+.trailer img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.trailer img:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 52, 59, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    display: none;
+    font-weight: bold;
+}
+
+.container:hover .text {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+}
